@@ -60,4 +60,4 @@ DefectSegNet has been trained using various data augmentation methods. As demons
 
 
 # References
-G.Roberts, S. Y. Haile, R.Sainju, D. J. Edwards, B.Hutchinson and Y.Zhu*, Deep Learning for Semantic Segmentation of Defects in Advanced STEM Images of Steels, Scientific Reports 9, 12744 (2019).
+G. Roberts, S. Y. Haile, R.Sainju, D. J. Edwards, B. Hutchinson and Y. Zhu*, Deep Learning for Semantic Segmentation of Defects in Advanced STEM Images of Steels, Scientific Reports 9, 12744 (2019).
