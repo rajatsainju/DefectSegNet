@@ -1,0 +1,20 @@
+type:convolution|kernel:3,3|padding:same|strides:1,1|activation function:relu|filters:4|input tensors:0
+type:convolution|filters:4|kernel:3,3|padding:same|activation function:relu|input tensors:0,1|strides:1,1
+type:max pool|kernel:2,2|strides:2|activation function:relu|padding:valid|input tensors:0,1,2
+type:convolution|kernel:3,3|filters:16|padding:same|activation function:relu|input tensors:3|strides:1,1
+type:convolution|kernel:3,3|filters:16|padding:same|activation function:relu|input tensors:3,4|strides:1,1
+type:max pool|kernel:2,2|input tensors:3,4,5|strides:2|activation function:relu|padding:valid
+type:convolution|kernel:3,3|filters:32|padding:same|activation function:relu|input tensors:6|strides:1,1
+type:convolution|kernel:3,3|filters:32|padding:same|activation function:relu|input tensors:6,7|strides:1,1
+type:max pool|kernel:2,2|padding:valid|input tensors:6,7,8|strides:2|activation function:relu
+type:convolution|kernel:3,3|filters:64|padding:same|activation function:relu|input tensors:9|strides:1,1
+type:convolution|kernel:3,3|filters:64|padding:same|activation function:relu|input tensors:9,10|strides:1,1
+type:convolution transpose|kernel:2,2|activation function:relu|input tensors:9,10,11|filters:32|strides:2,2|padding:valid
+type:convolution|filters:32|kernel:3,3|activation function:relu|padding:same|input tensors:6,7,8,12|strides:1,1
+type:convolution|filters:32|kernel:3,3|activation function:relu|padding:same|input tensors:6,7,8,12,13|strides:1,1
+type:convolution transpose|kernel:2,2|strides:2,2|padding:valid|activation function:relu|input tensors:6,7,8,12,13,14|filters:16
+type:convolution|kernel:3,3|padding:same|activation function:relu|strides:1,1|input tensors:3,4,5,15|filters:16
+type:convolution|kernel:3,3|padding:same|activation function:relu|strides:1,1|input tensors:3,4,5,15,16|filters:16
+type:convolution transpose|filters:8|kernel:2,2|padding:valid|input tensors:3,4,5,15,16,17|strides:2,2|activation function:relu
+type:convolution|kernel:3,3|activation function:relu|strides:1,1|filters:4|input tensors:0,1,2,18|padding:same
+type:convolution|kernel:3,3|activation function:sigmoid|padding:same|filters:1|input tensors:0,1,2,18,19|strides:1,1

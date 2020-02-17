@@ -1,0 +1,38 @@
+target: ['void:20']
+architecture_file: architectures/dense_vgg_plusplus.txt
+path_to_directory: ../throwback_data
+image_types: ['void']
+lr: 0.0014500665823986396
+patience: 10
+segment_size: 512
+epochs: 1
+giveup: 5
+lr_decay: 0.2729776864188235
+random_count: 0
+train_doses: ['hidose', 'lodose']
+train_images: ['1', '2']
+val_doses: ['hidose', 'lodose']
+val_images: ['1', '2']
+test_doses: ['hidose', 'lodose']
+test_images: ['1', '2']
+residual_weight: 0.1
+train_num: 1
+batch_norm: True
+weight: 35.9012310949939
+mb_depth: 8
+experiment_filename: thrsholdsed_precip_throwback
+reg_scale: 0.4763413804640104
+last_reg_scale: 0.370153502167434
+dropout_rate: 0.23438998033954672
+eval_train_all: False
+eval_train_recent: False
+verbose: True
+initial_config: 0
+weight_decay: 1.0
+weight_kernel: False
+checkpoint_fn: None
+drop_shortcut_rate: 1
+contrast: 0
+noise_scale: 0
+flip_chance: 0
+drop_chance: 0

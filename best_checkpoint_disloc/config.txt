@@ -1,0 +1,40 @@
+target: ['disline:20']
+architecture_file: architectures/dense_vgg_plusplus.txt
+path_to_directory: ../renamed_data_png
+config_file: best_checkpoint_disloc/config.txt
+image_types: ['disloc']
+lr: 0.001819
+patience: 10
+segment_size: 512
+epochs: 100
+giveup: 5
+lr_decay: 0.8
+random_count: 0
+train_doses: ['hidose']
+train_images: ['1', '2']
+val_doses: ['hidose']
+val_images: ['1', '2']
+test_doses: ['hidose']
+test_images: ['1', '2']
+residual_weight: 0.1
+train_num: 1
+batch_norm: True
+weight: 8.0
+mb_depth: 8
+experiment_filename: disloc_remake3
+reg_scale: 0.1
+last_reg_scale: 0.1
+dropout_rate: 0.2
+eval_train_all: False
+eval_train_recent: False
+verbose: True
+initial_config: 0
+weight_decay: 1.0
+weight_kernel: False
+checkpoint_fn: ../results/disloc_remake2/28Oct_11.08.59/model_28Oct_11.08.59.ckpt
+drop_shortcut_rate: 1
+contrast: 0
+noise_scale: 0
+flip_chance: 0
+drop_chance: 0
+savepath: best_checkpoint_disloc/checkpoint.ckpt
